@@ -1,20 +1,27 @@
-# Alandan Cevre Etkinliği Tutorial
+# Alandan Çevre Etkinliği Tutorial
 
+## Değişkenlerimizi Tanımlayalım
+
+Öncelikle kenar ve cevre değişkenlerimizi tanımlayalım. ``||variables: set kenar to 0||`` ve ``||variables: set cevre  to 0||`` 
+
+```blocks
+let kenar = 0
+let cevre = 0
+```
 
 ## Alandan Kenar Hesaplama 
-Alan değerinden kenar bilgisini hesaplayabilmek için alandanKenarBul fonksiyonunu hazırlayalım.
-alan adında bir parametre tanımlayalım.
+Alan değerinden kenar bilgisini hesaplayabilmek için ``||functions: function alandanKenarBul||``  fonksiyonunu hazırlayalım.
+ ``||variables: alan|`` adında bir parametre tanımlayalım.
 
 ```blocks
 
 function alandanKenarBul (alan: number) {
  
 }
-
 ```
-
-## Fonksiyonda Değişken Tanımlama
-Kenar değeri hesaplandıktan sonra saklaması için kenar değişkenini oluşturalım
+## Fonksiyonda Değişkene Değer Atama
+Kenar değeri hesaplandıktan sonra saklaması için ``||variables:kenar||`` değişkenine değerini atayalım.
+``||variables: set kenar to 0||`` 
 ```blocks
 
 function alandanKenarBul (alan: number) {
@@ -24,8 +31,8 @@ function alandanKenarBul (alan: number) {
 
 ```
 
-## square root Bloğunu Kullanalım
-square root bloğunu kullanarak alan parametresinden gelen değerin karekökünü hesaplayalım
+## ``||math:square root|`` Bloğunu Kullanalım
+``||math:square root|`` bloğunu kullanarak ``||variables: alan|`` parametresinden gelen değerin karekökünü hesaplayalım.
 ```blocks
 
 function alandanKenarBul (alan: number) {
@@ -34,8 +41,8 @@ function alandanKenarBul (alan: number) {
 }
 ```
 
-## return Kod Bloğunu Kullanalım
-return kod bloğunu kullanarak hesapladığımız kenar değerini fonksiyon dışına gönderelim.
+## ``||functions:return|`` Kod Bloğunu Kullanalım
+``||functions:return|`` kod bloğunu kullanarak hesapladığımız ``||variables: kenar|`` değişkeninde sakladığımız değeri fonksiyon dışına gönderelim.
 ```blocks
 function alandanKenarBul (alan: number) {
     kenar = Math.sqrt(alan)
@@ -43,9 +50,9 @@ function alandanKenarBul (alan: number) {
 }
 ```
 
-## CevreHesapla Fonksiyonu
-kenar parametresinden gelen kenar değerine göre karenin çevresini hesaplayacak fonksiyonu oluşturalım.
-kenar adında parametre tanımlayalım.
+## ``||functions: function CevreHesapla||`` Fonksiyonu
+``||variables: kenar|`` parametresinden gelen kenar değerine göre karenin çevresini hesaplayacak olan ``||functions: function CevreHesapla||`` fonksiyonu oluşturalım.
+``||variables: kenar|`` adında parametre tanımlayalım.
 
 
 ```blocks 
@@ -56,8 +63,11 @@ function CevreHesapla (kenar: number) {
 ```
 
 
-## CevreHesapla Fonksiyonun Değişkenleri
-CevreHesapla Fonksiyonunda hesaplanacak çevre değerini saklaması için cevre değişkenini oluşturalım.
+
+## Fonksiyonda Değişkene Değer Atama
+
+Fonksiyonunda hesaplanacak çevre değerini saklaması için ``||variables: cevre|`` değişkenine değerini atayalım.
+ ``||variables: set cevre to 0||`` 
 
 ```blocks
 function CevreHesapla (kenar: number) {
@@ -65,16 +75,19 @@ function CevreHesapla (kenar: number) {
   
 }
 ```
+
 ## Çevreyi Hesaplayalım.
-kenar parametresinden gelen değeri 4 ile çarpalım ve sonucu cevre değişkeninde saklayalım.
+``||variables: kenar|``  parametresinden gelen değeri 4 ile çarpalım ve sonucu ``||variables: cevre|`` değişkeninde saklayalım.
+
 ```blocks
 function CevreHesapla (kenar: number) {
     cevre = kenar * 4
     
 }
 ```
-## Yine return Kod Bloğunu Kullanalım
-return kod bloğunu kullanarak hesapladığımız cevre değerini fonksiyon dışına gönderelim.
+
+## Yine  ``||functions:return|`` Kod Bloğunu Kullanalım
+ ``||functions:return|`` kod bloğunu kullanarak hesapladığımız ``||variables: cevre|`` değişkeninde sakladığımız değeri fonksiyon dışına gönderelim.
 ```blocks
 function CevreHesapla (kenar: number) {
     cevre = kenar * 4
@@ -83,28 +96,18 @@ function CevreHesapla (kenar: number) {
 ```
 
 ## Sonuçları Gösterelim
-on start bloğu içerisinde fonksiyon çağırarak sonuçları gösterelim. Show Number kod bloğu kullanacağız.
+``||basic: on start||`` bloğu içerisinde fonksiyon çağırarak sonuçları gösterelim. ``||basic:showNumber||`` kod bloğunu kullanacağız.
 
 ```blocks
-basic.showNumber()
+basic.showNumber(0)
 
 ```
 
-## Fonksiyonları Çağıralım
-call alandanKenarBul kod bloğunu kullanarak fonksiyonunu 36 gibi bir değer girerek çağıralım
-```blocks
-basic.showNumber(alandanKenarBul(36))
 
-```
-## Fonksiyonları Çağıralım
-Çevre sonucunu görebilmek için call CevreHesapla kod bloğu kullanarak alandanKenarBul fonksiyonundan gelen sonuç için çağıracağız.
-```blocks
-basic.showNumber(CevreHesapla(alandanKenarBul(36)))
 
-```
-
-## Kodların Tamamı
-Projenin tamamlanmış hali aşağıdaki gibidir.
+## Fonksiyonları Çağıralım.
+Çevre sonucunu görebilmek için  ``||functions:call CevreHesapla||`` kod bloğu kullanarak ``||functions:alandanKenarBul||`` fonksiyonundan gelen sonuç için çağıracağız.
+Projenin tamamlanmış haline kod blokları aşağıdaki gibi olacaktır.
 
 ```blocks
 function CevreHesapla (kenar: number) {
