@@ -25,26 +25,12 @@ Kenar değeri hesaplandıktan sonra saklaması için ``||variables:kenar||`` de�
 ```blocks
 
 function alandanKenarBul (alan: number) {
-    kenar = 0
+   kenar = 0
  
 }
 
 ```
-## denemememee
 
-açıklama 
-
-```blocks
-
-input.onButtonPressed(Button.A, function () {
-    tiem = input.runningTime()
-})
- 
-
-input.onButtonPressed(Button.B, function () {
-    hesapla = hesapla - tiem
-})
-```
 
 ## ``||math:square root|`` Bloğunu Kullanalım
 ``||math:square root|`` bloğunu kullanarak ``||variables: alan|`` parametresinden gelen değerin karekökünü hesaplayalım.
@@ -60,6 +46,7 @@ function alandanKenarBul (alan: number) {
 ``||functions:return|`` kod bloğunu kullanarak hesapladığımız ``||variables: kenar|`` değişkeninde sakladığımız değeri fonksiyon dışına gönderelim.
 ```blocks
 function alandanKenarBul (alan: number) {
+    let kenar = 0
     kenar = Math.sqrt(alan)
     return kenar
 }
@@ -86,7 +73,7 @@ Fonksiyonunda hesaplanacak çevre değerini saklaması için ``||variables: cevr
 
 ```blocks
 function CevreHesapla (kenar: number) {
-    cevre = 0
+     cevre = 0
   
 }
 ```
@@ -105,6 +92,7 @@ function CevreHesapla (kenar: number) {
  ``||functions:return|`` kod bloğunu kullanarak hesapladığımız ``||variables: cevre|`` değişkeninde sakladığımız değeri fonksiyon dışına gönderelim.
 ```blocks
 function CevreHesapla (kenar: number) {
+    let cevre = 0
     cevre = kenar * 4
     return cevre
 }
