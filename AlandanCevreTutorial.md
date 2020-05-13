@@ -120,6 +120,8 @@ function alandanKenarBul (alan: number) {
 }
 let kenar = 0
 let cevre = 0
+kenar = 0
+cevre = 0
 basic.showNumber(CevreHesapla(alandanKenarBul(36)))
 ```
 
