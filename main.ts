@@ -6,6 +6,8 @@ function alandanKenarBul (alan: number) {
     kenar = Math.sqrt(alan)
     return kenar
 }
-let kenar = 0
 let cevre = 0
+let kenar = 0
+kenar = 0
+cevre = 0
 basic.showNumber(CevreHesapla(alandanKenarBul(36)))
