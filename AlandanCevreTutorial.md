@@ -1,16 +1,13 @@
 # Alandan Çevre
 ## Alandan Çevre Etkinliği Tutorial @unplugged
-
+![kareAlanı](/alandancevrereturn/kare.png)
 
 
 ## Değişkenlerimizi Tanımlayalım 
 
 Öncelikle kenar ve cevre değişkenlerimizi tanımlayalım. ``||variables: set kenar to 0||`` ve ``||variables: set cevre  to 0||`` 
-### ~ ipucu
 
-#### Simple, short descriptions
 
-During an interaction, the step description (all text before the first code block or image) is shown in the caption. If the paragraph length goes beyond the display length of caption, a "More" button appears in order to view the rest of the paragraph. It's best to keep the paragraph short enough to so all of it appears in the caption without requiring the user to click to see it all. If your instructions need more text, you can just create an additional step to split up the activity.
 
 
 ```blocks
@@ -22,8 +19,7 @@ let cevre = 0
 ## Alandan Kenar Hesaplama @fullscreen
 Alan değerinden kenar bilgisini hesaplayabilmek için ``||functions: function alandanKenarBul||``  fonksiyonunu hazırlayalım.
  ``||variables: alan||`` adında bir parametre tanımlayalım.
-### ~
-ssaasdasd
+
 
 
 ```blocks
@@ -50,7 +46,9 @@ function alandanKenarBul (alan: number) {
 
 ## ``||Math: square root||`` Bloğunu Kullanalım
 ``||math: square root||`` bloğunu kullanarak ``||variables: alan||`` parametresinden gelen değerin karekökünü hesaplayalım.
-``||Math: square root||``
+
+
+
 ```blocks
 
 function alandanKenarBul (alan: number) {
