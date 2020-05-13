@@ -30,6 +30,21 @@ function alandanKenarBul (alan: number) {
 }
 
 ```
+## denemememee
+
+açıklama 
+
+```blocks
+
+input.onButtonPressed(Button.A, function () {
+    tiem = input.runningTime()
+})
+ 
+
+input.onButtonPressed(Button.B, function () {
+    hesapla = hesapla - tiem
+})
+```
 
 ## ``||math:square root|`` Bloğunu Kullanalım
 ``||math:square root|`` bloğunu kullanarak ``||variables: alan|`` parametresinden gelen değerin karekökünü hesaplayalım.
