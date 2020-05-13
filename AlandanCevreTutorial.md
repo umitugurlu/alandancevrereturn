@@ -1,17 +1,30 @@
-# Alandan Çevre Etkinliği Tutorial
+# Alandan Çevre
+## Alandan Çevre Etkinliği Tutorial @unplugged
 
-## Değişkenlerimizi Tanımlayalım
+
+
+## Değişkenlerimizi Tanımlayalım 
 
 Öncelikle kenar ve cevre değişkenlerimizi tanımlayalım. ``||variables: set kenar to 0||`` ve ``||variables: set cevre  to 0||`` 
+### ~ ipucu
+
+#### Simple, short descriptions
+
+During an interaction, the step description (all text before the first code block or image) is shown in the caption. If the paragraph length goes beyond the display length of caption, a "More" button appears in order to view the rest of the paragraph. It's best to keep the paragraph short enough to so all of it appears in the caption without requiring the user to click to see it all. If your instructions need more text, you can just create an additional step to split up the activity.
+
 
 ```blocks
 let kenar = 0
 let cevre = 0
+
 ```
 
-## Alandan Kenar Hesaplama 
+## Alandan Kenar Hesaplama @fullscreen
 Alan değerinden kenar bilgisini hesaplayabilmek için ``||functions: function alandanKenarBul||``  fonksiyonunu hazırlayalım.
- ``||variables: alan|`` adında bir parametre tanımlayalım.
+ ``||variables: alan||`` adında bir parametre tanımlayalım.
+### ~
+ssaasdasd
+
 
 ```blocks
 
@@ -20,8 +33,11 @@ function alandanKenarBul (alan: number) {
 }
 ```
 ## Fonksiyonda Değişkene Değer Atama
-Kenar değeri hesaplandıktan sonra saklaması için ``||variables:kenar||`` değişkenine değerini atayalım.
+Kenar değeri hesaplandıktan sonra saklaması için ``||variables:  kenar||`` değişkenine değerini atayalım.
 ``||variables: set kenar to 0||`` 
+
+#### ~
+sdasdasdasfasfasfafasfasfas
 ```blocks
 
 function alandanKenarBul (alan: number) {
@@ -32,8 +48,9 @@ function alandanKenarBul (alan: number) {
 ```
 
 
-## ``||math:square root|`` Bloğunu Kullanalım
-``||math:square root|`` bloğunu kullanarak ``||variables: alan|`` parametresinden gelen değerin karekökünü hesaplayalım.
+## ``||Math: square root||`` Bloğunu Kullanalım
+``||math: square root||`` bloğunu kullanarak ``||variables: alan||`` parametresinden gelen değerin karekökünü hesaplayalım.
+``||Math: square root||``
 ```blocks
 
 function alandanKenarBul (alan: number) {
@@ -42,8 +59,8 @@ function alandanKenarBul (alan: number) {
 }
 ```
 
-## ``||functions:return|`` Kod Bloğunu Kullanalım
-``||functions:return|`` kod bloğunu kullanarak hesapladığımız ``||variables: kenar|`` değişkeninde sakladığımız değeri fonksiyon dışına gönderelim.
+## ``||functions: return||`` Kod Bloğunu Kullanalım
+``||functions: return||`` kod bloğunu kullanarak hesapladığımız ``||variables: kenar||`` değişkeninde sakladığımız değeri fonksiyon dışına gönderelim.
 ```blocks
 function alandanKenarBul (alan: number) {
     let kenar = 0
@@ -53,8 +70,8 @@ function alandanKenarBul (alan: number) {
 ```
 
 ## ``||functions: function CevreHesapla||`` Fonksiyonu
-``||variables: kenar|`` parametresinden gelen kenar değerine göre karenin çevresini hesaplayacak olan ``||functions: function CevreHesapla||`` fonksiyonu oluşturalım.
-``||variables: kenar|`` adında parametre tanımlayalım.
+``||variables: kenar||`` parametresinden gelen kenar değerine göre karenin çevresini hesaplayacak olan ``||functions: function CevreHesapla||`` fonksiyonu oluşturalım.
+``||variables: kenar||`` adında parametre tanımlayalım.
 
 
 ```blocks 
@@ -68,7 +85,7 @@ function CevreHesapla (kenar: number) {
 
 ## Fonksiyonda Değişkene Değer Atama
 
-Fonksiyonunda hesaplanacak çevre değerini saklaması için ``||variables: cevre|`` değişkenine değerini atayalım.
+Fonksiyonunda hesaplanacak çevre değerini saklaması için ``||variables: cevre||`` değişkenine değerini atayalım.
  ``||variables: set cevre to 0||`` 
 
 ```blocks
@@ -79,7 +96,7 @@ function CevreHesapla (kenar: number) {
 ```
 
 ## Çevreyi Hesaplayalım.
-``||variables: kenar|``  parametresinden gelen değeri 4 ile çarpalım ve sonucu ``||variables: cevre|`` değişkeninde saklayalım.
+``||variables: kenar||``  parametresinden gelen değeri 4 ile çarpalım ve sonucu ``||variables: cevre||`` değişkeninde saklayalım.
 
 ```blocks
 function CevreHesapla (kenar: number) {
@@ -88,8 +105,8 @@ function CevreHesapla (kenar: number) {
 }
 ```
 
-## Yine  ``||functions:return|`` Kod Bloğunu Kullanalım
- ``||functions:return|`` kod bloğunu kullanarak hesapladığımız ``||variables: cevre|`` değişkeninde sakladığımız değeri fonksiyon dışına gönderelim.
+## Yine  ``||functions:return||`` Kod Bloğunu Kullanalım
+ ``||functions:return||`` kod bloğunu kullanarak hesapladığımız ``||variables: cevre||`` değişkeninde sakladığımız değeri fonksiyon dışına gönderelim.
 ```blocks
 function CevreHesapla (kenar: number) {
     let cevre = 0
@@ -108,17 +125,21 @@ basic.showNumber(0)
 
 
 
-## Fonksiyonları Çağıralım.
+## Fonksiyonları Çağıralım. @unplugged
 Çevre sonucunu görebilmek için  ``||functions:call CevreHesapla||`` kod bloğu kullanarak ``||functions:alandanKenarBul||`` fonksiyonundan gelen sonuç için çağıracağız.
 Projenin tamamlanmış haline kod blokları aşağıdaki gibi olacaktır.
+``|Download|`` butonuna tıklayarak Micro:Bit cihazınıza indirebilirsiniz.
+
 
 ```blocks
 
 function CevreHesapla (kenar: number) {
+    let cevre = 0
     cevre = kenar * 4
     return cevre
 }
 function alandanKenarBul (alan: number) {
+    let kenar = 0
     kenar = Math.sqrt(alan)
     return kenar
 }
@@ -129,4 +150,5 @@ kenar = 0
 cevre = 0
 basic.showNumber(CevreHesapla(alandanKenarBul(36)))
 ```
+
 
