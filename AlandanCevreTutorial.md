@@ -110,6 +110,7 @@ basic.showNumber(0)
 Projenin tamamlanmış haline kod blokları aşağıdaki gibi olacaktır.
 
 ```blocks
+
 function CevreHesapla (kenar: number) {
     cevre = kenar * 4
     return cevre
@@ -118,6 +119,7 @@ function alandanKenarBul (alan: number) {
     kenar = Math.sqrt(alan)
     return kenar
 }
+
 let kenar = 0
 let cevre = 0
 kenar = 0
