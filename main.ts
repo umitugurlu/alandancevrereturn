@@ -10,5 +10,4 @@ let cevre = 0
 let kenar = 0
 kenar = 0
 cevre = 0
-let tiem = 0
 basic.showNumber(CevreHesapla(alandanKenarBul(36)))
