@@ -1,11 +1,11 @@
 # Alandan Çevre
 ## Alandan Çevre Etkinliği Tutorial @unplugged
-![kareAlanı](/alandancevrereturn/kare.png)
+![kareAlanı](https://raw.githubusercontent.com/umitugurlu/alandancevrereturn/master/kare.png)
 
 
 ## Değişkenlerimizi Tanımlayalım 
 
-Öncelikle kenar ve cevre değişkenlerimizi tanımlayalım. ``||variables: set kenar to 0||`` ve ``||variables: set cevre  to 0||`` 
+Öncelikle ``kenar`` ve ``cevre`` değişkenlerimizi tanımlayalım. ``||variables: set kenar to 0||`` ve ``||variables: set cevre  to 0||`` 
 
 
 
