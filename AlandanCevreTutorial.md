@@ -1,31 +1,14 @@
 # Alandan Çevre
-
-```codecard
-[{
-  "name": "Alandan Çevre Hesaplama",
-  "url":"/projects/alandancevrereturn",
-  "description": "Karenin Çevresi.",
-  "imageUrl": "https://raw.githubusercontent.com/umitugurlu/alandancevrereturn/master/kare.png",
-  "cardType": "tutorial",
-  "label": "Yeni! Hemen Başla",
-  "labelClass": "purple ribbon large"
-}, {
-  "name": "Name Tag",
-  "description": "Scroll your name on the screen",
-  "imageUrl": "https://makecode.com/not-found/HEAD/static/gizmo/projects/name-tag.png",
-  "url": "/projects/name-tag",
-  "cardType": "tutorial"
-}]
- ```
-    
-##Alandan Çevre Etkinliği Tutorial @unplugged
+## Alandan Çevre Etkinliği Tutorial @unplugged
 ![kareAlanı](https://raw.githubusercontent.com/umitugurlu/alandancevrereturn/master/kare.png)
- 
 
 
 ## Değişkenlerimizi Tanımlayalım 
 
 Öncelikle ``kenar`` ve ``cevre`` değişkenlerimizi tanımlayalım. ``||variables: set kenar to 0||`` ve ``||variables: set cevre  to 0||`` 
+
+
+
 
 ```blocks
 let kenar = 0
@@ -45,14 +28,11 @@ function alandanKenarBul (alan: number) {
  
 }
 ```
-
-
 ## Fonksiyonda Değişkene Değer Atama
 Kenar değeri hesaplandıktan sonra saklaması için ``||variables:  kenar||`` değişkenine değerini atayalım.
 ``||variables: set kenar to 0||`` 
 
-
-#### Detaylı Açıklama ~
+#### ~
 sdasdasdasfasfasfafasfasfas
 ```blocks
 
@@ -68,6 +48,7 @@ function alandanKenarBul (alan: number) {
 ``||math: square root||`` bloğunu kullanarak ``||variables: alan||`` parametresinden gelen değerin karekökünü hesaplayalım.
 
 
+
 ```blocks
 
 function alandanKenarBul (alan: number) {
@@ -75,7 +56,6 @@ function alandanKenarBul (alan: number) {
     
 }
 ```
-
 
 ## ``||functions: return||`` Kod Bloğunu Kullanalım
 ``||functions: return||`` kod bloğunu kullanarak hesapladığımız ``||variables: kenar||`` değişkeninde sakladığımız değeri fonksiyon dışına gönderelim.
@@ -136,13 +116,14 @@ function CevreHesapla (kenar: number) {
 ## Sonuçları Gösterelim
 ``||basic: on start||`` bloğu içerisinde fonksiyon çağırarak sonuçları gösterelim. ``||basic:showNumber||`` kod bloğunu kullanacağız.
 
-
 ```blocks
 basic.showNumber(0)
+
 ```
 
 
-## Fonksiyonları Çağıralım. @unplugged 
+
+## Fonksiyonları Çağıralım. @unplugged
 Çevre sonucunu görebilmek için  ``||functions:call CevreHesapla||`` kod bloğu kullanarak ``||functions:alandanKenarBul||`` fonksiyonundan gelen sonuç için çağıracağız.
 Projenin tamamlanmış haline kod blokları aşağıdaki gibi olacaktır.
 ``|Download|`` butonuna tıklayarak Micro:Bit cihazınıza indirebilirsiniz.
@@ -167,4 +148,5 @@ kenar = 0
 cevre = 0
 basic.showNumber(CevreHesapla(alandanKenarBul(36)))
 ```
+
 
