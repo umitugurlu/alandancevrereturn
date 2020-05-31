@@ -1,4 +1,6 @@
 # Alandan Çevre
+
+
 ## Alandan Çevre Etkinliği Tutorial @unplugged
 ![kareAlanı](https://raw.githubusercontent.com/umitugurlu/alandancevrereturn/master/kare.png)
 
@@ -80,7 +82,6 @@ function CevreHesapla (kenar: number) {
 ```
 
 
-
 ## Fonksiyonda Değişkene Değer Atama
 
 Fonksiyonunda hesaplanacak çevre değerini saklaması için ``||variables: cevre||`` değişkenine değerini atayalım.
@@ -116,7 +117,7 @@ function CevreHesapla (kenar: number) {
 ## Sonuçları Gösterelim
 ``||basic: on start||`` bloğu içerisinde fonksiyon çağırarak sonuçları gösterelim. ``||basic:showNumber||`` kod bloğunu kullanacağız.
 
-```blocks
+```block
 basic.showNumber(0)
 
 ```
